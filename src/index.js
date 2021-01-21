@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './container/Portfolio';
 import reportWebVitals from './reportWebVitals';
+import ReusableComponents from './container/ReusableComponents';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ReusableComponents />
   </React.StrictMode>,
   document.getElementById('root')
 );
