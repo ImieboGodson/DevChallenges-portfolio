@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Projectholder {
+    width: 100%;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    font-family: 'Montserrat';
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.Project-thumbnail {
+    width: 100%;
+    height: 267px;
+    background: #C4C4C4;
+    border-radius: 12px;
+}
+
+.ProjectInfo .Taglist {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.ProjectInfo .Taglist p {
+    margin-right:20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
+
+.ProjectInfo .Details {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ProjectInfo .Details .ProjectTitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+.ProjectInfo .Details .ProjectSummary {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
+.ProjectInfo .Details .BtnWrapper {
+    display: flex;
+}
+
+.ProjectInfo .Details .BtnWrapper .Btn {
+    padding: 15px 45px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #5C94E1;
+    border-radius: 12px;
+}
+
+.ProjectInfo .Details .BtnWrapper .Btn-outline {
+    font-size: 18px;
+    line-height: 22px;
+    color: #5C94E1;
+    background: #FFFFFF;
+    border: 1px solid #5C94E1;
+}
+
+
+
+
