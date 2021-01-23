@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skills {
+    width: 100%;
+    padding: 25px;
+    font-family: 'Montserrat';
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.skillsHeaderText {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.skillsHeaderText h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4F4F4F;
+}
+
+.skills-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.skill-wrapper {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.skill-wrapper p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
+
+.skill-wrapper .container {
+    width: 100%;
+    height: 9px;
+    background: #C4C4C4;
+    border-radius: 12px;
+}
+
+.skill {
+    height: 100%;
+    background: rgba(47, 128, 237, 0.7);
+    border-radius: 12px;
+}
+
+.react {
+    width: 90%;
+}
+
+.javascript {
+    width: 70%;
+}
+
+.css {
+    width: 90%;
+}
+
+.vue{
+    width: 70%;
+}
+
+.redux {
+    width: 85%;
+}
+
+.react-native {
+    width: 65%;
+}
+
+
+@media (max-width: 500px) {
+    .skills-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .skill-wrapper {
+        grid-template-columns: 2fr 3fr;
+    }
+}

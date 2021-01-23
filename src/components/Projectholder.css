@@ -52,6 +52,7 @@
 }
 
 .ProjectInfo .Details .ProjectSummary {
+    /* max-height: 70px; */
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -82,5 +83,24 @@
 }
 
 
+/* Mediaqueries */
+@media (max-width: 500px) {
+    .Projectholder {
+        width: 100%;
+        padding: 15px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 
+    .Project-thumbnail {
+        width: 100%;
+    }
 
+    .ProjectInfo .Details .ProjectSummary {
+        margin: 20px 0;
+    }
+
+    .ProjectInfo .Details .BtnWrapper {
+        margin-top: 10px;
+    }
+}
