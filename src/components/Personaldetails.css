@@ -92,7 +92,7 @@
 /* Mediaqueries */
 @media (max-width: 500px) {
     .Personaldetails {
-        padding: 25px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
