@@ -6,9 +6,9 @@
     box-sizing: border-box;
 }
 
-.Blogposts {
+.blogposts {
     width: 100%;
-    padding: 25px;
+    padding: 25px 0 25px 25px;
     font-family: 'Montserrat';
     background: #FFFFFF;
     border-radius: 12px;
@@ -16,5 +16,88 @@
 
 .blogpost-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 4fr;
+    gap: 20px;
+}
+
+.category h2{
+    font-size: 16px;
+    line-height: 20px;
+    color: #E0E0E0;
+}
+
+.blogpost-title {
+    padding-top: 40px;
+}
+
+.blogpost-title h2 {
+    width: 178px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+.blogpost-grid .blogpost-thumbnail {
+    width: 90%;
+    grid-row: span 4;
+    justify-self: right;
+    background: #C4C4C4;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 12px
+}
+
+.blogpost-summary {
+    padding: 20px 0;
+}
+
+.blogpost-summary p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
+.blogpost-host {
+    padding-top: 20px;
+}
+
+.blogpost-host a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5C94E1;
+}
+
+
+@media (max-width: 500px) {
+    .blogposts {
+        padding: 15px 0 15px 15px;
+    }
+
+    .blogpost-grid {
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+    }
+
+    .blogpost-grid .blogpost-thumbnail {
+        width: 100%;
+    }
+
+    .blogpost-title {
+        height: 321px;
+        padding-top: 30px;
+    }
+
+    .blogpost-summary {
+        grid-column: 1/-1;
+    }
+
+    .blogpost-summary p{
+        width: 95%;
+    }
 }
